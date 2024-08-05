@@ -9,7 +9,7 @@
      int Classe;
      string Idade;
      int Sexo;
-     string ClasseSocial;
+     int ClasseSocial;
      int Ocupacao;
      int Historia;
      string Motivacao;
@@ -22,7 +22,7 @@
      int Sabedoria;
      int Carisma;
     
-    
+      int Habilidade;
       int Espada;
       int Arco;
       int Armadinhas;
@@ -106,7 +106,7 @@
        cin >> Idade;
     
        cout <<" Qual o seu Sexo?"<<endl;
-       cout<<"Opção 1 masculino"<< "opção 2 feminino\n"<<endl;
+       cout<<"Opção 1 masculino\n"<< "opção 2 feminino\n"<<endl;
        cin >> Sexo;
        switch(Sexo)
        {
@@ -120,11 +120,27 @@
            break;
        }
     
-       cout <<"  Classe Social"<<endl;
-       cin >> ClasseSocial;
+       cout <<" Classe Social qual o seu nivel de riqueza?"<<endl;
+       cout <<"Opção 1 Nobre\n"<<"Opção 2 plebeu\n"<<"Opção 3 Servo\n"<<endl;
+        cin >> ClasseSocial;
+       switch (ClasseSocial)
+       {
+           case 1: cout <<"Nobre\n";
+           break;
+           
+           case 2: cout <<"plebeu\n";
+           break;
+           
+           case 3: cout <<"Servo\n";
+           break;
+            
+            default: cout<<"Invalido\n";
+            break;
+           
+       }
     
        cout <<"Oque você faz? qual a sua ocupação?"<<endl;
-       cout <<"Opção 1 Medico"<<"opção 2 ferreiro"<<"opção 3 cozinheiro."<<endl;
+       cout <<"Opção 1 Medico.\n"<<"opção 2 ferreiro.\n"<<"opção 3 cozinheiro.\n"<<endl;
        cin >> Ocupacao;
        switch(Ocupacao)
        {
@@ -164,6 +180,23 @@
         case 3: cout<<"alto, forte e moreno\n";
         
         default: cout<<"Invalido\n";
+        break;
+    }
+    cout<<"Habilidades"<<endl;
+    cout <<" opção 1 Foco em corpo a corpo, tem mais proficiencia com Espadas, Furtividade e Lutar.\n"<<" opção 2 Foco a longa distacia tem mais proficiencia com Arcos, Magias, Persuasão\n"<<"opcão 3 suporte tem mais proficiencia com Medicina, Herbalismo, Herbalismo, Navegação, Etiqueta e Linguas\n"<<endl;
+    cin >> Habilidade;
+    switch(Habilidade)
+    {
+        case 1: cout <<"Foco em corpo a corpo\n";
+        break;
+        
+        case 2: cout <<"foco em longa distacia\n";
+        break;
+        
+        case 3: cout <<"foco em suporte\n";
+        break;
+        
+        default: cout <<"Está classe não existe\n";
         break;
     }
     return 0;
