@@ -45,11 +45,11 @@
     
       string Armas;
       string Armaduras;
-      string Equipametos;
+      int Equipametos;
     
       float MoedasDeOuro;
     
-    
+      float Guilda
       float Reputacao;
       string Alianca;
       string Conexoes;
@@ -155,8 +155,8 @@
        }
        
     
-       cout <<" qual a sua Historia? oque você já passou? Faça uma escolha entre as opções A e B!" <<endl;
-      cout<<"opção 1 Você era uma criança de um vilarejo muito pobre, localizado bem no interior que tem o sonho de se tonar rico! e para realizar esse sonho, você se torna um aventureiro e em embarca em uma viagem em buusca de novas aventuras e tesouros!\n"<<"opção 2 Quando criança, você teve sua família morta por monstros e isso fz com que você no futuro, se tornasse um bravo Guerreiro que iria eliminar todos esses monstros do mundo!\n"<<endl;
+       cout <<"\nqual a sua Historia? oque você já passou? Faça uma escolha entre as opções A e B!" <<endl;
+      cout<<"opção 1 Você era uma criança de um vilarejo muito pobre, localizado bem no interior que tem o sonho de se tonar rico! e para realizar esse sonho, você se torna um aventureiro e em embarca em uma viagem em buusca de novas aventuras e tesouros!\n"<<"\nopção 2 Quando criança, você teve sua família morta por monstros e isso fz com que você no futuro, se tornasse um bravo Guerreiro que iria eliminar todos esses monstros do mundo!\n"<<endl;
         cin >> Historia;
       switch(Historia)
       {
@@ -199,5 +199,38 @@
         default: cout <<"Está classe não existe\n";
         break;
     }
+    
+    cout <<"Equipametos"<<endl;
+    cout<<"Espadas"<<endl;
+    cin >> Espadas;
+    
+    cout<<"Armaduras"<<endl;
+    cin >> Armaduras;
+    
+    cout << "quais itens você quer começar?"<<endl
+    cout <<"opcão 1 5 poções, 2 antidatos, 1 Armadinha e 100 moedas de ouro\n"<<"7 poções, 3 antidatos, 1 Armadinha e 50 moedas de ouro\n"<<endl;
+    cin >> itens;
+    switch(itens)
+    {
+        case 1: cout <<"5 poções, 2 antidatos, 1 Armadinha e 100 moedas de ouro\n"
+        break;
+        
+        case 2: cout <<"7 poções, 3 antidatos, 1 Armadinha e 50 moedas de ouro\n"
+        break;
+    }
+    cout <<"outras informações"<<endl;
+    
+     cout <<"Escolha qual Guilda você ira começar\n"<<endl;
+     switch(Guilda)
+     {
+         case 1: <<"Os tigres brancos da Montanha\n";
+         break;
+         
+         case 2: cout <<"Dragões cinzentos do Sul\n";
+         break;
+         case 3: cout <<"Os trolls da Norte\n";
+     }
+    
+    
     return 0;
     }
